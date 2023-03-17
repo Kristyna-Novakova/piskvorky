@@ -42,3 +42,28 @@ body {
   background-color: #283e50;
   color: #ffffff;
 }
+
+.game-rules {
+  display: block;
+  background-color: #1fcca4;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 1px;
+  padding: 1rem;
+}
+
+.game-rules:hover {
+  background-color: #1cbb96;
+}
+
+.game-start {
+  display: block;
+  background-color: #0197f6;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.game-start:hover {
+  background-color: #0090e9;
+}
