@@ -3,3 +3,42 @@
 :before {
   box-sizing: border-box;
 }
+
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.game {
+  width: 350px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 5rem;
+  left: calc(50% - (350px / 2));
+}
+
+.game-photo {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.game-title {
+  font-family: "Lobster";
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.game-paragraph {
+  font-size: 15px;
+  padding: 1rem;
+}
+
+.game-info {
+  text-align: center;
+  background-color: #283e50;
+  color: #ffffff;
+}
