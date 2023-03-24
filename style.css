@@ -11,6 +11,8 @@ body {
   position: relative;
 }
 
+/* Úvodní stránka */
+
 .game {
   width: 350px;
   font-family: sans-serif;
@@ -66,4 +68,44 @@ body {
 
 .game-start:hover {
   background-color: #0090e9;
+}
+
+/* Stránka na hraní piškvorek */
+
+.play {
+  width: 350px;
+  font-family: sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 5rem;
+  left: calc(50% - (350px / 2));
+}
+
+.play-title {
+  font-family: "Lobster";
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.player {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.player::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
