@@ -70,7 +70,7 @@ body {
   background-color: #0090e9;
 }
 
-/* Stránka na hraní piškvorek */
+/* hra.html */
 
 .play {
   width: 350px;
@@ -105,7 +105,7 @@ body {
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 
 .player::after {
@@ -128,12 +128,13 @@ body {
   display: block;
   background-color: #1fcca4;
   text-decoration: none;
-  margin-bottom: 1px;
+  margin: auto 0.5rem;
   padding: 0.5rem;
   border-radius: 5px;
 }
 
-.button-home:hover {
+.button-home:hover,
+.button-home:focus {
   background-color: #1cbb96;
 }
 
@@ -147,7 +148,8 @@ body {
 
 }
 
-.button-restart:hover {
+.button-restart:hover,
+.button-restart:focus {
   background-color: #0090e9;
 }
 
