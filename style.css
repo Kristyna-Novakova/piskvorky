@@ -88,10 +88,9 @@ body {
 
 .container-buttons {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  width: 80%;
+  margin: auto;
 }
 
 .player {
@@ -138,8 +137,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 0.5rem;
-  margin: auto 0.4rem;
-
+  margin: auto 0.5rem;
 }
 
 .button-restart:hover,
@@ -153,7 +151,7 @@ body {
   /* border-collapse: collapse; */
   aspect-ratio: 1 / 1;
   width: 80%;
-  border: px solid gray;
+  border: 1px solid rgb(105, 105, 105);
   margin: 1rem auto 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +161,7 @@ body {
 
 .playing-field button {
   /* float: left; */
-  border: 1px solid gray;
+  border: 1px solid rgb(105, 105, 105);
   background-color: rgb(226, 188, 205);
   opacity: 80%;
   width: calc(100% / 10);
