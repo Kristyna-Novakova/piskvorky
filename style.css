@@ -160,7 +160,6 @@ body {
 }
 
 .playing-field button {
-  /* float: left; */
   border: 1px solid rgb(105, 105, 105);
   background-color: rgb(226, 188, 205);
   opacity: 80%;
