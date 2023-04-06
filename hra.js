@@ -10,18 +10,21 @@ const button7 = document.querySelector('.playing-field button:nth-child(7)');
 const button8 = document.querySelector('.playing-field button:nth-child(8)');
 const button9 = document.querySelector('.playing-field button:nth-child(9)');
 const button10 = document.querySelector('.playing-field button:nth-child(10)');
+const playingField = document.querySelector('.playing-field');
 
 const handleButtonClick = (event) => {
-  button.
-}
+  event.target.classList.add(`board__field--${currentPlayer}`);
 
-button1.addEventListener('click');
-button2.addEventListener('click');
-button3.addEventListener('click');
-button4.addEventListener('click');
-button5.addEventListener('click');
-button6.addEventListener('click');
-button7.addEventListener('click');
-button8.addEventListener('click');
-button9.addEventListener('click');
-button10.addEventListener('click');
+  event.target.disabled = true;
+};
+
+button1.addEventListener('click', handleButtonClick);
+button2.addEventListener('click', handleButtonClick);
+button3.addEventListener('click', handleButtonClick);
+button4.addEventListener('click', handleButtonClick);
+button5.addEventListener('click', handleButtonClick);
+button6.addEventListener('click', handleButtonClick);
+button7.addEventListener('click', handleButtonClick);
+button8.addEventListener('click', handleButtonClick);
+button9.addEventListener('click', handleButtonClick);
+button10.addEventListener('click', handleButtonClick);
