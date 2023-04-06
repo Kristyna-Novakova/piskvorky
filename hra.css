@@ -51,6 +51,37 @@ body {
   margin-left: 5px;
 }
 
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.cross {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  background-color: black;
+  top: 0;
+  left: 9px;
+}
+
+.cross:before {
+  transform: rotate(45deg);
+}
+
+.cross:after {
+  transform: rotate(-45deg);
+}
 
 .buttons-main {
   display: flex;
