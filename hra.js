@@ -11,9 +11,10 @@ const button8 = document.querySelector('.playing-field button:nth-child(8)');
 const button9 = document.querySelector('.playing-field button:nth-child(9)');
 const button10 = document.querySelector('.playing-field button:nth-child(10)');
 const playingField = document.querySelector('.playing-field');
+const player = document.querySelector('.player');
 
 const handleButtonClick = (event) => {
-  event.target.classList.add(`board__field--${currentPlayer}`);
+  event.target.classList.add(`board__field--circle`);
 
   event.target.disabled = true;
 };

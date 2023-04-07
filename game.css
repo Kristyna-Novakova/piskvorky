@@ -91,7 +91,8 @@ body {
 .board__field--cross:after {
   transform: rotate(-45deg);
 } */
-*/ .buttons-main {
+
+.buttons-main {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
