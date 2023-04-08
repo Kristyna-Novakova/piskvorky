@@ -14,7 +14,15 @@ const playingField = document.querySelector('.playing-field');
 const player = document.querySelector('.player');
 
 const handleButtonClick = (event) => {
-  event.target.classList.add(`board__field--circle`);
+  const button = event.target;
+
+  if (currentPlayer === 'circle') {
+    button.classList.add('board__field--circle');
+    currentPlayer = 'cross';
+  } else {
+    button.classList.add('board__field--cross');
+    currentPlayer = 'circle';
+  }
 
   event.target.disabled = true;
 };
