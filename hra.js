@@ -10,8 +10,7 @@ const button7 = document.querySelector('.playing-field button:nth-child(7)');
 const button8 = document.querySelector('.playing-field button:nth-child(8)');
 const button9 = document.querySelector('.playing-field button:nth-child(9)');
 const button10 = document.querySelector('.playing-field button:nth-child(10)');
-const playingField = document.querySelector('.playing-field');
-const player = document.querySelector('.player');
+const playerElm = document.querySelector('.player-icon');
 
 const handleButtonClick = (event) => {
   const button = event.target;
@@ -19,9 +18,13 @@ const handleButtonClick = (event) => {
   if (currentPlayer === 'circle') {
     button.classList.add('board__field--circle');
     currentPlayer = 'cross';
+    playerElm.classList.add('cross');
+    playerElm.classList.remove('circle');
   } else {
     button.classList.add('board__field--cross');
     currentPlayer = 'circle';
+    playerElm.classList.add('circle');
+    playerElm.classList.remove('cross');
   }
 
   event.target.disabled = true;

@@ -51,11 +51,38 @@ body {
   margin-left: 5px;
 } */
 
+
+.circle {
+  background-image: url(img/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  filter: invert(100%);
+  margin-left: 5px;
+}
+
+.cross {
+    background-image: url(img/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    filter: invert(100%);
+    margin-left: 5px;
+}
+
+
 .board__field--circle {
   background-image: url(img/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  z-index: -1;
 }
 
 .board__field--cross {
@@ -63,32 +90,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  z-index: -1;
 }
 
-/* .board__field--cross {
-  /* width: 20px;
-  height: 20px; */
-/* position: relative;
-}
-
-.board__field--cross:before,
-.board__field--cross:after {
-  content: "";
-  position: absolute;
-  height: 30px;
-  width: 3px;
-  background-color: #ffffff;
-  top: 0;
-  left: auto;
-}
-
-.board__field--cross:before {
-  transform: rotate(45deg);
-}
-
-.board__field--cross:after {
-  transform: rotate(-45deg);
-} */
 
 .buttons-main {
   display: flex;
@@ -153,7 +157,6 @@ body {
   opacity: 80%;
   width: calc(100% / 10);
   aspect-ratio: 1 / 1;
-  transition: 0.5s;
 }
 
 button:hover,
