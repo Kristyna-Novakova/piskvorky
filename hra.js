@@ -11,6 +11,7 @@ const button8 = document.querySelector('.playing-field button:nth-child(8)');
 const button9 = document.querySelector('.playing-field button:nth-child(9)');
 const button10 = document.querySelector('.playing-field button:nth-child(10)');
 const playerElm = document.querySelector('.player-icon');
+playerElm.classList.add('circle');
 
 const handleButtonClick = (event) => {
   const button = event.target;
@@ -40,3 +41,13 @@ button7.addEventListener('click', handleButtonClick);
 button8.addEventListener('click', handleButtonClick);
 button9.addEventListener('click', handleButtonClick);
 button10.addEventListener('click', handleButtonClick);
+
+const buttonRestart = document.querySelector('.button-restart');
+buttonRestart,
+  addEventListener('click', (event) => {
+    const confirmed = confirm('Opravdu chcete začít znovu?');
+
+    if (confirmed === false) {
+      event.preventDefault();
+    }
+  });
