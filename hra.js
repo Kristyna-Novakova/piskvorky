@@ -23,13 +23,13 @@ const handleButtonClick = (event) => {
   event.target.disabled = true;
 };
 
-// buttonAll.forEach((btn) => {
-//   btn.addEventListener('click', handleButtonClick);
-// });
+buttonAll.forEach((btn) => {
+  btn.addEventListener('click', handleButtonClick);
+});
 
-for (let i = 0; i < 10; i++) {
-  buttonAll[i].addEventListener('click', handleButtonClick);
-}
+// for (let i = 0; i < 10; i++) {
+//   buttonAll[i].addEventListener('click', handleButtonClick);
+// }
 
 // Funkce confirm
 const buttonRestart = document.querySelector('.button-restart');
