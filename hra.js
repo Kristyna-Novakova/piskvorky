@@ -23,6 +23,36 @@ const handleButtonClick = (event) => {
   }
 
   event.target.disabled = true;
+
+  const board = Array.from(buttonAll).map((button) => {
+    if (button.classList.contains('board__field--circle')) {
+      return 'o';
+    } else if (button.classList.contains('board__field--cross')) {
+      return 'x';
+    } else {
+      return '_';
+    }
+  });
+  console.log(board);
+
+  const winner = findWinner(board);
+
+  if (winner === 'o') {
+    setTimeout(() => {
+      alert('Vyhrálo kolečko!');
+      location.reload();
+    }, 200);
+  } else if (winner === 'x') {
+    setTimeout(() => {
+      alert('Vyhrál křížek!');
+      location.reload();
+    }, 200);
+  } else if (winner === 'tie') {
+    setTimeout(() => {
+      alert('Hra skončila nerozhodně.');
+      location.reload();
+    }, 200);
+  }
 };
 
 buttonAll.forEach((btn) => {
