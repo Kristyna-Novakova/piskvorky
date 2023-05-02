@@ -70,17 +70,19 @@ const handleButtonClick = (event) => {
       .then((response) => response.json())
       .then((data) => {
         const { x, y } = data.position;
-        const index = x + y * 10; // Konvertování x a y na index pro 10x10 board
+        // Konvertování x a y na index pro 10x10 board
+        const index = x + y * 10;
         const field = buttonAll[index];
         field.click();
       });
 
+    // Povolení tlačítek, na kterých nebyl označen křížek ani kolečko
     buttonAll.forEach((btn) => {
       if (
         !btn.classList.contains('board__field--circle') &&
         !btn.classList.contains('board__field--cross')
       ) {
-        btn.disabled = false; // Povolení tlačítek, na kterých nebyl označen křížek ani kolečko
+        btn.disabled = false;
       }
     });
   }
